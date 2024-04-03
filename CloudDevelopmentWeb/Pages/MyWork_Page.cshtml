@@ -1,0 +1,151 @@
+﻿@page
+@model CloudDevelopmentWeb.Pages.MyWork_PageModel
+@{
+}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .craft-work {
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+            .image-container img {
+                
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            button{
+
+                color: black;
+
+            }
+
+            a{
+                color: white;
+            }
+
+           
+    </style>
+</head>
+<body>
+
+    <header>
+        <center>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="/About_Us">About</a>
+                    </li>
+                    <li>
+                        <a href="/Contact_Us">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/MyWork_Page">My Work</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </center>
+    </header>
+
+
+    <br />
+    <br />
+    
+
+    <div class="container">
+        <h1><u>Crafted Work </u></h1>
+
+        <br />
+        <br />
+
+        <button class="my-button">
+            <a href="#">Add More Craft</a>
+        </button>
+
+        <br />
+        <br />
+    <main>
+            <div class="image-container">
+        <div class="craft-work">
+                    <u> <h2>Craftwork 1</h2></u>
+
+                    <br />
+                    <br />
+
+                <img src="~/css/pic2.jpeg" alt="Craft 1" style="width:400px;height:500px">
+                    <br />
+                    <br />
+                    <br />
+                    
+            <h3>Price: R100</h3>
+                    <button class="my-button">
+                        <a href="#">View</a>
+                    </button>
+        </div>
+
+        <div class="craft-work">
+                    <u> <h2>Craftwork 2</h2></u>
+
+                    <br />
+                    <br />
+
+                <img src="~/css/pic3.jpeg" alt="Craft 2" style="width:400px;height:500px ">
+                    <br />
+                    <br />
+                    <br />
+            <h3>Price: R200</h3>
+                    <button class="my-button">
+                        <a href="#">View</a>
+                    </button>
+        </div>
+
+            <div class="craft-work">
+                    <u> <h2>Craftwork 3</h2></u>
+
+                    <br />
+                    <br />
+
+                <img src="~/css/pic.jpg" alt="Craft 3" style="width:400px;height:500px">
+                    <br />
+                    <br />
+                    <br />
+                <h3>Price: R200</h3>
+                    <button class="my-button">
+                        <a href="#">View</a>
+                    </button>
+            </div>
+            </div>
+
+        
+            <br />
+            <br />
+        <!-- Add more craftworks as needed -->
+
+           
+           
+    </main>
+    </div>
+</body>
+</html>

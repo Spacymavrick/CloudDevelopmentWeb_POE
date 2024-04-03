@@ -1,0 +1,116 @@
+﻿@page
+@model CloudDevelopmentWeb.Pages.Contact_UsModel
+@{
+}
+<html lang="en">
+    <body>
+<header>
+    <center>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/Index">Home</a>
+                </li>
+                <li>
+                    <a href="/About_Us">About</a>
+                </li>
+                <li>
+                    <a href="/Contact_Us">Contact</a>
+                </li>
+                <li>
+                    <a href="/MyWork_Page">My Work</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </center>
+
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #contact-page {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+            form input[type="text"], form input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                resize: vertical;
+            }
+
+            form input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #5DADE2;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                form input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+
+                h1{
+                    color:white;
+
+                }
+    </style>
+
+</header>
+   
+  
+        <div id="contact-page">
+        <h1> <u> Contact Us</u></h1>
+            <form action="/contact-form-process.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </body>
+</html>
+
+
