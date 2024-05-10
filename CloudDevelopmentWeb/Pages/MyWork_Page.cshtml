@@ -1,4 +1,4 @@
-﻿@page
+﻿    @page
 @model CloudDevelopmentWeb.Pages.MyWork_PageModel
 @{
 }
@@ -32,7 +32,7 @@
 
             button{
 
-                color: black;
+                color: white;
 
             }
 
@@ -62,6 +62,9 @@
                     <li>
                         <a href="/MyWork_Page">My Work</a>
                     </li>
+                    <li>
+                        <a href="/Cart_Page">My Cart</a>
+                    </li>
 
                 </ul>
             </nav>
@@ -80,8 +83,8 @@
         <br />
         <br />
 
-        <button class="my-button">
-            <a href="#">Add More Craft</a>
+        <button class="my-button" onclick="location.href='/Add_Craft'">
+            Add More Craft
         </button>
 
         <br />
@@ -89,7 +92,7 @@
     <main>
             <div class="image-container">
         <div class="craft-work">
-                    <u> <h2>Craftwork 1</h2></u>
+                    <h2> <u>Craftwork 1 </u></h2>
 
                     <br />
                     <br />
@@ -100,13 +103,23 @@
                     <br />
                     
             <h3>Price: R100</h3>
-                    <button class="my-button">
-                        <a href="#">View</a>
-                    </button>
+                  <br />
+                    <input type="number" class="product-quantity" value="1" min="1">
+                    <br />
+                    <br />
+                    <br />
+                    <button id="show-toast">Add to Cart</button>
+
+                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-body">
+                            Item Added to Cart 
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
         </div>
 
         <div class="craft-work">
-                    <u> <h2>Craftwork 2</h2></u>
+                    <h2> <u>Craftwork 2 </u></h2>
 
                     <br />
                     <br />
@@ -116,13 +129,23 @@
                     <br />
                     <br />
             <h3>Price: R200</h3>
-                    <button class="my-button">
-                        <a href="#">View</a>
-                    </button>
+                    <br />
+                    <input type="number" class="product-quantity" value="1" min="1">
+                    <br />
+                    <br />
+                    <br />
+                    <button id="show-toast">Add to Cart</button>
+
+                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-body">
+                            Item Added to Cart
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
         </div>
 
             <div class="craft-work">
-                    <u> <h2>Craftwork 3</h2></u>
+                    <h2> <u>Craftwork 3 </u></h2>
 
                     <br />
                     <br />
@@ -132,15 +155,31 @@
                     <br />
                     <br />
                 <h3>Price: R200</h3>
-                    <button class="my-button">
-                        <a href="#">View</a>
-                    </button>
+
+                    <br />
+                    <input type="number" class="product-quantity" value="1" min="1">
+                    <br />
+                    <br />
+                    <br />
+                    <button id="show-toast">Add to Cart</button>
+
+                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-body">
+                            Item Added to Cart 
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <br />
+                    <br />
+                   
             </div>
             </div>
 
-        
+
+           
             <br />
             <br />
+
         <!-- Add more craftworks as needed -->
 
            

@@ -1,0 +1,95 @@
+﻿@page
+@model CloudDevelopmentWeb.Pages.Cart_PageModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <center>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="/About_Us">About</a>
+                    </li>
+                    <li>
+                        <a href="/Contact_Us">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/MyWork_Page">My Work</a>
+                    </li>
+                    <li>
+                        <a href="/Cart_Page">My Cart</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </center>
+    </header>
+    <div class="shopping-cart">
+        <div class="title">Shopping Cart</div>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="cart-summary">
+            <div class="cart-summary-item">
+                <span>Item Count:</span>
+                <span id="item-count">0</span>
+            </div>
+            <div class="cart-summary-item">
+                <span>Grand Total:</span>
+                <span id="grand-total">$0.00</span>
+            </div>
+        </div>
+        <button class="empty-cart-btn" onclick="emptyCart()">Empty Cart</button>
+    </div>
+
+    <div class="products">
+        <div class="product-item">
+            <div class="product-image">
+                <img src="~/css/pic2.jpeg" alt="Product Image">
+            </div>
+            <br />
+            <div class="product-details">
+                <h3 class="productname">CraftWork 1</h3>
+                <p class="price">R 100.00 <span>each</span></p>
+                <input type="number" class="product-quantity" value="1" min="1">
+                <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Duplicate product items here -->
+    </div>
+
+
+    
+            <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script src="script.js"></script>
+</body>
+</html>

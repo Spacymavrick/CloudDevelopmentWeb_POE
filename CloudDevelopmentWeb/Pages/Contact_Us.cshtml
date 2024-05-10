@@ -20,6 +20,9 @@
                 <li>
                     <a href="/MyWork_Page">My Work</a>
                 </li>
+                    <li>
+                        <a href="/Cart_Page">My Cart</a>
+                    </li>
 
             </ul>
         </nav>
@@ -97,7 +100,7 @@
   
         <div id="contact-page">
         <h1> <u> Contact Us</u></h1>
-            <form action="/contact-form-process.php" method="post">
+            <form >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -107,9 +110,25 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" cols="30" required></textarea>
 
-                <input type="submit" value="Send Message">
+                
             </form>
+
+        <button class="my-button" onclick="message()">
+            Send Message
+        </button>
+
+        <br />
+        <br />
+
+        <div class="message">
+            <div class="success" id="success">
+                You Message Successfully Sent !
+            </div>
         </div>
+
+        </div>
+
+
     </body>
 </html>
 

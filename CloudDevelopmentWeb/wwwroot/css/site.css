@@ -119,6 +119,7 @@ button {
     font-family: inherit;
     cursor: pointer;
     background-color: black;
+    color: white;
     width: 9em;
     height: 3em;
     line-height: 2em;
@@ -333,3 +334,123 @@ button {
 }
 
 
+/*Message Alert*/
+
+.message{
+
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display:flex;
+    justify-content:center;
+}
+
+    .message .success {
+        font-size: 20px;
+        color: green;
+        position: absolute;
+        transition: .3s;
+        animation: buttons .3s linear;
+        display: none;
+    }
+
+.toast {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+    .toast.show {
+        display: block;
+    }
+
+.btn-close {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn-close:hover {
+        background-color: #444;
+    }
+
+/*Cart Page*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+.shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    #cart-table th,
+    #cart-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.empty-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*Add Craft*/
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #2b2b42;
+    color: #f5f6f7;
+}

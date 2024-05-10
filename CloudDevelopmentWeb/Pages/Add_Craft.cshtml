@@ -1,0 +1,70 @@
+﻿@page
+@model CloudDevelopmentWeb.Pages.Add_CraftModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Product Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <center>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="/About_Us">About</a>
+                    </li>
+                    <li>
+                        <a href="/Contact_Us">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/MyWork_Page">My Work</a>
+                    </li>
+                    <li>
+                        <a href="/Cart_Page">My Cart</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </center>
+    </header>
+
+    <br />
+    <br />
+
+    <h1>Add Craft Product</h1>
+    <p>Please fill out this form with the required information</p>
+    <form >
+        <fieldset>
+            <label for="product-name">Enter Product Name: <input id="product-name" /></label>
+            <label for="product-price">Enter Product Price: <input id="product-price" /></label>
+            <label for="product-category">Enter Product Category: <input id="product-category" /></label>
+            <label for="product-quantity">Enter Product Quantity: <input id="product-quantity" /></label>
+        </fieldset>
+        <fieldset></fieldset>
+        <fieldset></fieldset>
+    </form>
+
+
+    <br />
+    <br />
+    <button id="show-toast">Add Product</button>
+
+    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Product Added
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</body>
+</html>
