@@ -5,10 +5,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="style.css">
+   <style>
+
+        .cart-container {
+            background-color: #f7f7f7;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-header {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .cart-header h2 {
+                margin-top: 0;
+            }
+
+        .vol, .vo, .lte {
+            font-size: 12px;
+            color: #666;
+            margin-right: 10px;
+        }
+
+        .cart-content {
+            padding: 20px;
+        }
+
+        .product-item {
+          
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .product-item img {
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+                border: 1px solid #ddd;
+            }
+
+        .product-details {
+            flex: 1;
+        }
+
+            .product-details h3 {
+                margin-top: 0;
+            }
+
+        .cart-footer {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+            .cart-footer p {
+                margin-bottom: 10px;
+            }
+
+        .proceed-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .proceed-btn:hover {
+                background-color: #3e8e41;
+            }
+
+        .did-you-know {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+            .did-you-know p {
+                margin-bottom: 10px;
+            }
+
+   </style>
 </head>
 
 <body>
@@ -38,58 +124,58 @@
 
         </center>
     </header>
-    <div class="shopping-cart">
-        <div class="title">Shopping Cart</div>
-        <table id="cart-table">
-            <thead>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <div class="cart-summary">
-            <div class="cart-summary-item">
-                <span>Item Count:</span>
-                <span id="item-count">0</span>
-            </div>
-            <div class="cart-summary-item">
-                <span>Grand Total:</span>
-                <span id="grand-total">$0.00</span>
-            </div>
-        </div>
-        <button class="empty-cart-btn" onclick="emptyCart()">Empty Cart</button>
-    </div>
 
-    <div class="products">
+   
+      
+         
+            <div class="cart-content">
+                <div class="product-item">
+                <img src="~/css/pic2.jpeg" alt="Craft 2" style="width:200px;height:230px ">
+                    <div class="product-details">
+                        <h3>Craftwork 1</h3>
+                        <p>In stock JHB CPT</p>
+                        <p>Quantity: 1</p>
+                        <p>Price: R 500</p>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+
         <div class="product-item">
-            <div class="product-image">
-                <img src="~/css/pic2.jpeg" alt="Product Image">
-            </div>
-            <br />
+            <img src="~/css/pic3.jpeg" alt="Craft 2" style="width:200px;height:230px ">
             <div class="product-details">
-                <h3 class="productname">CraftWork 1</h3>
-                <p class="price">R 100.00 <span>each</span></p>
-                <input type="number" class="product-quantity" value="1" min="1">
-                <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                <h3>Craftwork 2</h3>
+                <p>In stock JHB CPT</p>
+                <p>Quantity: 1</p>
+                <p>Price: R 600</p>
             </div>
         </div>
-        <!-- Duplicate product items here -->
-    </div>
+
+        <br />
+        <br />
+        
 
 
+                <div class="cart-footer">
+                    <p>Placing an item in your shopping cart does not reserve that item or price. We only reserve stock for your order once payment is received.</p>
+                    <br />
+                    <br />
+                    <p>TOTAL: (1 Item)</p>
+                    <br />
+                    
+
+                    <p>Amount: R 1 100</p>
+                    <br />
+                    <br />
+
+            <button class="proceed-btn" onclick="location.href='/Billing&Payment_Page'">PROCEED</button>
+                   
+                </div>
+           
+          
+            </div>
     
-            <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <script src="script.js"></script>
 </body>
 </html>

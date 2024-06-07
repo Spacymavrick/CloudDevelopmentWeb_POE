@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudDevelopmentWeb", "CloudDevelopmentWeb\CloudDevelopmentWeb.csproj", "{8CE89061-30AA-4213-90ED-C6D85F3C4875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseLayer", "DataBaseLayer\DataBaseLayer.csproj", "{AEB9A04B-3FB0-4499-82E1-BC2443393244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseLayer", "DataBaseLayer\DataBaseLayer.csproj", "{AEB9A04B-3FB0-4499-82E1-BC2443393244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{92C1B88E-61D6-4526-821C-204651A87351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{92C1B88E-61D6-4526-821C-204651A87351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,191 @@
+﻿@page
+@model CloudDevelopmentWeb.Pages.Confirmation_PageModel
+@{
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Add some basic styling to the page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+     h2{
+         color: white;
+     }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        #confirm-button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            #confirm-button:hover {
+                background-color: #3e8e41;
+            }
+
+        #notification {
+            background-color: #dff0df;
+            padding: 10px;
+            border: 1px solid #c6f7c6;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <center>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="/About_Us">About</a>
+                    </li>
+                    <li>
+                        <a href="/Contact_Us">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/MyWork_Page">My Work</a>
+                    </li>
+                    <li>
+                        <a href="/Cart_Page">My Cart</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </center>
+    </header>
+
+   
+
+    <!-- Order Summary Section -->
+    <section id="order-summary">
+        <h2>Order Summary</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Craftwork 1</td>
+                <td>1</td>
+                <td>R 500</td>
+            </tr>
+            <tr>
+                <td>Craftwork 2</td>
+                <td>1</td>
+                <td>R 600</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td>R 1 100</td>
+            </tr>
+            <tr>
+                <td>Tax (10%)</td>
+                <td></td>
+                <td>R 110</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>R 1 210</td>
+            </tr>
+        </table>
+    </section>
+
+    <br />
+    <br />
+   
+
+
+    <!-- Billing Address Section -->
+
+    <h2><u>Billing Address</u></h2>
+    <br />
+  
+
+        <h3>
+            Name: Lesego Pitso<br>
+            Email: Pitsolesego06@gmail.com<br>
+            Address: 6 Maluti Street, Rondebult 
+        </h3>
+  
+
+    <!-- Payment Method Section -->
+
+    <h2><u>Payment Method</u></h2>
+    <br />
+    
+
+        <h3>
+            Payment Method: Credit Card<br>
+            Card Number: ************1234<br>
+            Expiration Date: 02/2025
+        </h3>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Confirm Button -->
+    <button id="confirm-button">Confirm</button>
+    <br />
+    <br />
+    <br />
+   
+    <!-- Notification Section -->
+    <section id="notification" style="display: none;">
+        <p>Order confirmed! You will receive an email with your order details.</p>
+    </section>
+
+    <br />
+    <br />
+   
+
+    <!-- CSS Styles -->
+  
+    <!-- JavaScript Code -->
+    <script>
+        document.getElementById("confirm-button").addEventListener("click", function () {
+            document.getElementById("notification").style.display = "block";
+            // Add code to redirect to the next page after a short delay
+            setTimeout(function () {
+                window.location.href = "/Index";
+            }, 2000);
+        });
+    </script>
+
+
+    </body>
+    </html>

@@ -9,36 +9,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work</title>
     <style>
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+  h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	text-align: center;
+	width: 350px;
+	height: 520px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 500px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #ff6600;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+.title {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 3rem;
+}
+
+
+
+.div-content{
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
         body {
             font-family: Arial, sans-serif;
         }
 
-        .craft-work {
-            margin-bottom: 20px;
-            
-        }
+       
 
-        .image-container {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-        }
-
-            .image-container img {
-                
-                object-fit: cover;
-                margin-right: 10px;
-            }
-
-            button{
-
-                color: white;
-
-            }
-
-            a{
-                color: white;
-            }
 
            
     </style>
@@ -90,100 +154,79 @@
         <br />
         <br />
     <main>
-            <div class="image-container">
-        <div class="craft-work">
-                    <h2> <u>Craftwork 1 </u></h2>
+	
 
-                    <br />
-                    <br />
-
-                <img src="~/css/pic2.jpeg" alt="Craft 1" style="width:400px;height:500px">
-                    <br />
-                    <br />
-                    <br />
-                    
-            <h3>Price: R100</h3>
-                  <br />
-                    <input type="number" class="product-quantity" value="1" min="1">
-                    <br />
-                    <br />
-                    <br />
-                    <button id="show-toast">Add to Cart</button>
-
-                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-body">
-                            Item Added to Cart 
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-        </div>
-
-        <div class="craft-work">
-                    <h2> <u>Craftwork 2 </u></h2>
-
-                    <br />
-                    <br />
-
-                <img src="~/css/pic3.jpeg" alt="Craft 2" style="width:400px;height:500px ">
-                    <br />
-                    <br />
-                    <br />
-            <h3>Price: R200</h3>
-                    <br />
-                    <input type="number" class="product-quantity" value="1" min="1">
-                    <br />
-                    <br />
-                    <br />
-                    <button id="show-toast">Add to Cart</button>
-
-                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-body">
-                            Item Added to Cart
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-        </div>
-
-            <div class="craft-work">
-                    <h2> <u>Craftwork 3 </u></h2>
-
-                    <br />
-                    <br />
-
-                <img src="~/css/pic.jpg" alt="Craft 3" style="width:400px;height:500px">
-                    <br />
-                    <br />
-                    <br />
-                <h3>Price: R200</h3>
-
-                    <br />
-                    <input type="number" class="product-quantity" value="1" min="1">
-                    <br />
-                    <br />
-                    <br />
-                    <button id="show-toast">Add to Cart</button>
-
-                    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-body">
-                            Item Added to Cart 
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <br />
-                    <br />
-                   
-            </div>
-            </div>
+    <section class="products">
+		<div class="all-products">
+			
+			<div class="product">
+				<img src="~/css/pic2.jpeg" alt="Craft 1" style="width:200px;height:230px">
+				<div class="product-info">
+					<h4 class="product-title">Craftwork 1
+					</h4>
+					<p class="product-price">R 500</p>
 
 
-           
-            <br />
-            <br />
+							<a class="product-btn" href="#" id="show-toast">Buy Now</a>
 
-        <!-- Add more craftworks as needed -->
+							<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+								<div class="toast-body">
+									Added to Cart
+								</div>
+								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
 
-           
-           
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="~/css/pic3.jpeg" alt="Craft 2" style="width:200px;height:230px ">
+				<div class="product-info">
+					<h4 class="product-title"> Craftwork 2 </h4>
+					<p class="product-price">R 600</p>
+
+							<a class="product-btn" href="#" id="show-toast">Buy Now</a>
+
+							<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+								<div class="toast-body">
+									Added to Cart
+								</div>
+								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="~/css/pic3.jpeg" alt="Craft 2" style="width:200px;height:230px ">
+				<div class="product-info">
+					<h4 class="product-title">Craftwork 3
+						</h4>
+					<p class="product-price">R 700</p>
+
+							<a class="product-btn" href="#" id="show-toast">Buy Now</a>
+
+							<div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+								<div class="toast-body">
+									Added to Cart
+								</div>
+								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
+
+				</div>
+			</div>
+		</div>
+
+
+				<br />
+				<br />
+				
+
+				<button class="my-button" onclick="location.href='/Cart_Page'">
+				Proccess to Cart
+				</button>
+
+			</section>
+
     </main>
     </div>
 </body>
